@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Service</h1>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Select Timezone</button>
+            <div id="timezoneDropdown" class="dropdown-content">
+                <a href="#" onclick="selectTimezone('UTC')">UTC</a>
+                <a href="#" onclick="selectTimezone('Europe/Sofia')">Sofia</a>
+                <a href="#" onclick="selectTimezone('America/New_York')">New York</a>
+            </div>
+        </div>
+        <button onclick="getTime()" class="select-btn">Get Time</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
